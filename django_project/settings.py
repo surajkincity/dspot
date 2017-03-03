@@ -102,12 +102,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
+STATIC_URL = '/var/www/spotable.in'
 STATIC_ROOT = "/var/www/spotable.in"
 STATICFILES_DIRS = (
     "/home/django/django_project/static",
 )
 
-STATIC_URL = '/static/'
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Allow Django from all hosts. This snippet is installed from
 # /var/lib/digitalocean/allow_hosts.py
