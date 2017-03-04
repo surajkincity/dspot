@@ -15,9 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from django_project.views import home
+from django_project.views import home,about,contact,privacy,sitemap,google
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', home),
+    url(r'^$', home , name='index'),
+    url(r'^sitemap.xml/', sitemap , name='sitemap'),
+    url(r'^googlefa975541a78f7cc0.html/', google , name='google'),
+    url(r'^about-spotable/', about , name='about'),
+    url(r'^contact-spotable/', contact , name='contact'),
+    url(r'^pricavy-policy-of-spotable/', privacy , name='privacy'),
+
+
 ]
