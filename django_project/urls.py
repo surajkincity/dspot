@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django_project.views import home,about,contact,privacy,sitemap,google
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls import patterns, url
 
 
 
