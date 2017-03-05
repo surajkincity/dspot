@@ -198,7 +198,7 @@ i {
  .ending{padding:60px!important;}
  #headerwrap{min-height: 700px !important;	padding-top:150px!important;}
 }
-.aboutbutton{padding:15px;width:150px;font-size:20px;font-weight:600;background-color:#00d674;border-color:#00d674;}
+.aboutbutton{padding:15px;width:150px;font-size:20px;font-weight:600;background-color:#00d674;border-color:#00d674;background-image: none!important;}
 .footermobile{color:white!important;font-weight: 600!important;text-align: center!important;}
 .footermobile p{padding-top:10px!important;margin: 0px!important;}
 #contactpage h1{text-align: center !important;}
