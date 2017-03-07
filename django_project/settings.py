@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'de51#5oc^+-_+wht@rjeb+g539o%!)xkg0os!%c32ass3q7_9+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -135,4 +135,4 @@ def ip_addresses():
     return ip_list
 
 # Discover our IP address
-ALLOWED_HOSTS = ip_addresses()
+#ALLOWED_HOSTS = ip_addresses()
