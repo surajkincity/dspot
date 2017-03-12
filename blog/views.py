@@ -13,8 +13,15 @@ from .forms import blogform,comentform
 def index(request):
     blogs = blog.objects.all()
     date = datetime.datetime.now().date()
-
     return render(request, 'blog/index.html',
+                  {'date': date,
+                  'blogs':blogs
+
+                  })
+
+def new(request):
+    form = blogform()
+    return render(request, 'blog/new.html',
                   {'date': date,
                   'blogs':blogs
 
