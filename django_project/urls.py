@@ -3,7 +3,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django_project.views import home,about,contact,privacy,sitemap,google
 from django.conf.urls import patterns, url
-from roc.views import
+from blog.views import
 from blog.models import blog,comment
 
 
