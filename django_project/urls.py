@@ -16,7 +16,6 @@ urlpatterns = patterns(
     url(r'^contact-spotable/', contact , name='contact'),
     url(r'^pricavy-policy-of-spotable/', privacy , name='privacy'),
     url(r'^blog/', include('blog.urls', namespace="blog")),
-    url(r'^blog/newblog', include('blog.urls', namespace="newblog")),
     url(r'^admin/', include(admin.site.urls)),
 
 

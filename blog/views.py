@@ -19,7 +19,7 @@ def index(request):
 
                   })
 
-def newblog(request):
+def new(request):
     date = datetime.datetime.now().date()
     blogs = blog.objects.all()
     if request.method == "POST":
