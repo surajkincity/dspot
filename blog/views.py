@@ -20,9 +20,20 @@ def index(request):
                   })
 
 def new(request):
-    form = blogform()
-    return render(request, 'blog/new.html',
-                  {'date': date,
-                  'blogs':blogs
-
-                  })
+    date = datetime.datetime.now().date()
+    blogs = blog.objects.all()
+    if request.method == "POST":
+        form = blogform(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return render(request, 'blog/index.html',
+                          {'date': date,
+                          'blogs':blogs
+                          })
+    else:
+        form = blogform()
+        return render(request, 'blog/new.html',
+                      {'date': date,
+                      'blogs':blogs
+                      })
