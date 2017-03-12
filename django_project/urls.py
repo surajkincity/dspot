@@ -8,7 +8,7 @@ from blog.models import blog,comment
 
 
 urlpatterns = patterns(
-    url(r'^admin/', include(admin.site.urls)),
+
     url(r'^$', home , name='index'),
     url(r'^sitemap.xml/', sitemap , name='sitemap'),
     url(r'^googlefa975541a78f7cc0.html/', google , name='google'),
@@ -16,6 +16,7 @@ urlpatterns = patterns(
     url(r'^contact-spotable/', contact , name='contact'),
     url(r'^pricavy-policy-of-spotable/', privacy , name='privacy'),
     url(r'^blog/', include('blog.urls', namespace="blog")),
+    url(r'^admin/', include(admin.site.urls)),
 
 
 )
