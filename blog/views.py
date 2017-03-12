@@ -7,7 +7,7 @@ import datetime
 from datetime import date,timedelta
 from django import forms
 from django.utils import timezone
-from .forms import Postblog,Postcomment
+from .forms import blogform,comentform
 
 
 def index(request,date):
