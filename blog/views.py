@@ -32,8 +32,9 @@ def new(request):
                           'blogs':blogs
                           })
     else:
-        form = blogform
+        form = blogform()
         return render(request, 'blog/new.html',
                       {'date': date,
-                      'blogs':blogs
+                      'blogs':blogs,
+                      'form' : form
                       })
